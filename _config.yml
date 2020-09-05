@@ -86,7 +86,7 @@ contact_description: Please contact using the below methods. Email at <a>sonpham
 # GITHUB-METADATA
 # Set this to your forked repository
 # > e.g. <user>/<user>.github.io
-repository: sonpham11235/personal-blog
+repository: https://github.com/sonpham11235/personal-blog.git
 projects:
   # sortby:
   # > set this to pushed, if you want to sort your github repositories by time.
