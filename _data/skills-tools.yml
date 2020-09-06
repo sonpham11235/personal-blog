@@ -24,13 +24,13 @@
 #   weight: 2
 
 - name: npm
-  weight: 3
+  weight: 4
 
 # - name: gulp
 #   weight: 4
 
 - name: VS Code
-  weight: 3
+  weight: 4
 
 - name: Postman
   weight: 3
