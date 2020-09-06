@@ -6,10 +6,7 @@
 #   weight: 5
 
 - name: JavaScript
-  weight: 3
-
-- name: Python
-  weight: 3
+  weight: 4
 
 - name: HTML5
   weight: 3
@@ -17,8 +14,11 @@
 - name: CSS3
   weight: 3
 
+- name: Python
+  weight: 4
+
 - name: SASS
   weight: 3
 
 - name: C#
-  weight: 3
+  weight: 4
