@@ -711,7 +711,7 @@ a {
       margin: 0 0.5rem 1rem;
       padding: 0.5rem 0.25rem;
       text-align: center;
-      width: 21%;
+      width: 15%;
 
       &:hover {
         letter-spacing: 0.25rem;
@@ -732,18 +732,27 @@ a {
       @include neumorphism-button-pressed();
     }
 
+    input[id="proglanguage"]:checked ~ div[skill-type="framework"],
+    input[id="proglanguage"]:checked ~ div[skill-type="tool"],
+    input[id="proglanguage"]:checked ~ div[skill-type="language"] {
+      @include filter-out;
+    }
+
+    input[id="framework"]:checked ~ div[skill-type="proglanguage"],
+    input[id="framework"]:checked ~ div[skill-type="tool"],
+    input[id="framework"]:checked ~ div[skill-type="language"] {
+      @include filter-out;
+    }
+
+    input[id="tool"]:checked ~ div[skill-type="proglanguage"],
+    input[id="tool"]:checked ~ div[skill-type="framework"],
+    input[id="tool"]:checked ~ div[skill-type="language"] {
+      @include filter-out;
+    }
+
     input[id="language"]:checked ~ div[skill-type="framework"],
-    input[id="language"]:checked ~ div[skill-type="tool"] {
-      @include filter-out;
-    }
-
-    input[id="framework"]:checked ~ div[skill-type="language"],
-    input[id="framework"]:checked ~ div[skill-type="tool"] {
-      @include filter-out;
-    }
-
-    input[id="tool"]:checked ~ div[skill-type="language"],
-    input[id="tool"]:checked ~ div[skill-type="framework"] {
+    input[id="language"]:checked ~ div[skill-type="tool"],
+    input[id="language"]:checked ~ div[skill-type="proglanguage"] {
       @include filter-out;
     }
   }
